@@ -99,6 +99,7 @@ nav.links a:hover::after{width:100%;}
   section{
     max-width:1180px;margin:0 auto;padding:96px 32px;
     border-left:1px solid var(--line);border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);border-right:1px solid var(--line);
   }
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
@@ -111,7 +112,10 @@ nav.links a:hover::after{width:100%;}
   .hero{
     background:var(--bg);
     padding-top:110px;padding-bottom:110px;
-    display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
   }
   .hero h1{
     font-size:40px;
@@ -211,3 +215,35 @@ footer{
     justify-content:space-between;
     font-size:11px;color:var(--ink-faint);
   }
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid #8a87836b;
+
+  }
+
+.skills h3 {
+  font-size: 12.5px;
+}
+
+.skills p {
+  font-size: 10px;
+}
+.skills-row{
+    display: flex;
+}
+.skills-block{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F7F5;
+    width: 221.6px;
+    height: 103.59px;
+
+    justify-content: center;
+    align-items: center;
+    border-color: #8a8783;
+    border:1px solid #8a87836b;
+}
+
+.skills-block:hover{background:transparent;color:var(--ink);}
