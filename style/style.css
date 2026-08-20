@@ -216,12 +216,14 @@ footer{
     font-size:11px;color:var(--ink-faint);
   }
 
-  .skills{
+.skills{
     display: flex;
     flex-direction: column;
     border-top: 8px solid #8a87836b;
 
-  }
+}
+
+
 
 .skills h3 {
   font-size: 12.5px;
@@ -232,18 +234,99 @@ footer{
 }
 .skills-row{
     display: flex;
-}
-.skills-block{
+  }
+  .skills-block{
     display: flex;
     flex-direction: column;
     background-color: #F8F7F5;
     width: 221.6px;
     height: 103.59px;
-
+    
     justify-content: center;
     align-items: center;
     border-color: #8a8783;
     border:1px solid #8a87836b;
+  }
+.skills-block:hover{background:transparent;color:var(--ink);}
+  
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    
+  }
+.project-col{
+  height: 203.4px;
+  min-width: 1114px;
 }
 
-.skills-block:hover{background:transparent;color:var(--ink);}
+.project-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-color: #8a8783;
+  border:1px solid #8a87836b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-item p{
+  font-size: 11px;
+}
+
+.project-card {
+  margin-left: 20px;
+  width: 798px;
+  
+}
+
+.project-card h3{
+  font-size: 16.5px;
+  margin-bottom: 10px;
+}
+.project-card p{
+  font-size: 12px;
+}
+
+  .btn-p{
+    font-family:inherit;
+    font-size:8px;
+    letter-spacing:.03em;
+
+    padding:6px 9px;
+    cursor:pointer;
+    border:1px solid var(--line);
+    transition:all .2s ease;
+    font-weight: lighter;
+    height: 25px;
+  }
+  .btn.ghost{background:transparent;color:var(--ink);}
+  .btn.ghost:hover{background:var(--ink);color:var(--bg);}
+
+
+.contact-row{
+    display: flex;
+  }
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F7F5;
+    width: 370px;
+    height: 103.59px;
+    
+    justify-content: center;
+    align-items: center;
+    border-color: #8a8783;
+    border:1px solid #8a87836b;
+  }
+
+  .contact-block h3{
+    font-size: 14px;
+  }
+
+  .contact-block p {
+    font-size: 10.5px;
+  }
+.contact-block:hover{background:transparent;color:var(--ink);}
+  
