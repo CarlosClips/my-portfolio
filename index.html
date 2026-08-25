@@ -1,236 +1,240 @@
 <!DOCTYPE html>
-    <html lang="pt-BR">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carlos Eduardo — Portfolio</title>
-        <link rel="stylesheet" href="style/style.css">
-        </head>
-        <body>
-            <header>
-                <div class="nav">
-                    <div class="brand"><span class="dot"></span><b>Carlos Eduardo</b> <span>/ dev</span></div>
-                    <nav class="links">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#experiencia">Experiência</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato">Contato</a>
-                    </nav>
-                    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
-                </div>
-                <!-- <nav class="mobile-menu" id="mobileMenu">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#experiencia">Experiência</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato">Contato</a>
-                </nav> -->
-            </header>
-            
-            <section class="hero" id="topo">
-                <div>
-                    <div class="eyebrow">
-                        myportfolio
-                    </div>
-                    <h1>Olá, sou o Carlos<span class="cursor"></span></h1>
-                    <p>Estudante de Análise e Desenvolvimento de Sistemas, construindo aplicações completas do banco de dados até a interface.</p>
-                    <div class="role">
-                        Desenvolvedor FullStack — Java · Python · React · PostgreSQL
-                    </div>
-                    <div class="cta-row">
-                        <button class="btn solid">Currículo</button>
-                        <button class="btn ghost">Entrar em contato</button>
-                    </div>
-                </div>
-                <div class="terminal">
-                    <div class="bar"><span></span><span></span><span></span></div>
-                    <div class="body">
-                    <div class="line">$ whoami</div>
-                    <div class="line out">carlos-eduardo</div>
-                    <div class="line">$ cat stack.txt</div>
-                    <div class="line out">Java · Spring · React · PostgreSQL</div>
-                    <div class="line">$ ./build_portfolio.sh</div>
-                    <div class="line out typed">compilando experiência...</div>
-                    </div>
-                </div>
-            </section>
-            <section class="hero" id="aboutMe">
-                <div class="eyebrow">$ cat sobre.txt</div> <br>
-                <div>
-                    <h1>Sobre mim<span class="cursor"></span></h1>
-                    <p>Sou o Carlos, estudante de Análise e Desenvolvimento
-                        de Sistemas e desenvolvedor FullStack. Gosto de
-                        entender o problema de ponta a ponta — do modelo de
-                        dados até o pixel na tela — e prefiro construir bem
-                        feito a construir rápido.
-                    </p>
-                    <p>
-                        Nos meus projetos pessoais, documento decisões
-                        técnicas como quem escreve um changelog: com
-                        propósito, contexto e um motivo para cada escolha.
-                    </p>
-                    <div class="cta-row">
-                        <span class="btn ghost">Java</span>
-                        <span class="btn ghost">Spring boot</span>
-                        <span class="btn ghost">React</span>
-                        <span class="btn ghost">PostgreSQL</span>
-                        <span class="btn ghost">Docker</span>
-                    </div>
-                </div>
-            </section>
-            <section class="hero" id="skills">
-                <div class="eyebrow">$ LS Habilidades/</div> <br>
-                <div>
-                    <h1>Habilidades<span class="cursor"></span></h1> <br><br>
-                    <div class="skills">
-                        <div class="skills-row">
-                            <div class="skills-block">
-                                <p>01</p>
-                                <h3>Java</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>02</p>
-                                <h3>Spring boot</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>03</p>
-                                <h3>Python</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>04</p>
-                                <h3>Django</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>05</p>
-                                <h3>PostgreSQL</h3>
-                            </div>
-                        </div>
-                        <div class="skills-row">
-                            <div class="skills-block">
-                                <p>06</p>
-                                <h3>HTML / CSS / JS</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>07</p>
-                                <h3>React</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>08</p>
-                                <h3>Git</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>09</p>
-                                <h3>Docker</h3>
-                            </div>
-                            <div class="skills-block">
-                                <p>10</p>
-                                <h3>REST APIs</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+<html lang="pt-BR">
 
-            </section>
-            <section class="hero" id="project">
-                <div class="eyebrow">$ LS PROJETOS/ --DETAILS</div> <br>
-                <div>
-                    <h1 >Projetos<span class="cursor"></span></h1> <br><br>
-                    <div class="projects">
-                        <div class="project-col">
-                            <div class="project-item">
-                                <p>01</p>
-                                <div class="project-card">
-                                    <h3>Workout Tracker</h3>
-                                    <p>Registro de treinos de academia inspirado no Hevy. CRUD completo
-                                        de exercícios, treinos e séries, com modelagem de domínio pensada
-                                        desde o catálogo de exercícios até a execução do treino.</p>
-                                    <div class="cta-row">
-                                        <span class="btn-p ghost">Java</span>
-                                        <span class="btn-p ghost">Spring</span>
-                                        <span class="btn-p ghost">PostgreSQL</span>
-                                        <span class="btn-p ghost">React</span>
-                                        <span class="btn-p ghost">Docker</span>
-                                    </div>
-                        
-                                </div>
-                                <p>Projeto pessoal</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <div class="project-col">
-                            <div class="project-item">
-                                <p>02</p>
-                                <div class="project-card">
-                                    <h3>Suite de Testes — App de Vendas</h3>
-                                    <p>Suite automatizada para uma aplicação React de gestão de vendas,
-                                        cobrindo produtos, clientes e registro de vendas com o padrão Page
-                                        Object Model.</p>
-                                    <div class="cta-row">
-                                        <span class="btn-p ghost">Python</span>
-                                        <span class="btn-p ghost">Pytest</span>
-                                        <span class="btn-p ghost">Selenium</span>
-                                        <span class="btn-p ghost">POM</span>
-                                    </div>
-            
-                                </div>
-                                <p>Projeto pessoal</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <div class="project-col">
-                            <div class="project-item">
-                                <p>03</p>
-                                <div class="project-card">
-                                    <h3>My-Pomodoro</h3>
-                                    <p>Registro de treinos de academia inspirado no Hevy. CRUD completo
-                                        de exercícios, treinos e séries, com modelagem de domínio pensada
-                                        desde o catálogo de exercícios até a execução do treino.</p>
-                                    <div class="cta-row">
-                                        <span class="btn-p ghost">React</span>
-                                        <span class="btn-p ghost">Html / css</span>
-    
-                                    </div>
-                        
-                                </div>
-                                <p>Projeto pessoal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="hero" id="contact">
-                <div class="eyebrow">$ ./contato --send</div> <br>
-                <div>
-                    <h1 >Vamos conversar sobre a próxima
-                        oportunidade.<span class="cursor"></span></h1> <br><br>
-                    <p>Aberto a processos seletivos, projetos freelance e trocas
-                        sobre desenvolvimento FullStack.
-                    </p>
-                    <div class="contact-row">
-                            <div class="contact-block">
-                                <p>Email</p>
-                                <h3>carlosclipps@gmail.com</h3>
-                            </div>
-                            <div class="contact-block">
-                                <p>LinkedIn</p>
-                                <h3>/in/carlos-eduardo</h3>
-                            </div>
-                            <div class="contact-block">
-                                <p>GitHub</p>
-                                <h3>/carlos-eduardo</h3>
-                            </div>
-                        </div>
-                    
-                </div>
-            </section>
-            <footer>
-                <span>© 2026 Carlos Eduardo</span>
-                <span>myportfolio</span>
-            </footer>
-        </body>
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Eduardo — Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
 
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="brand"><span class="dot"></span><b>Carlos Eduardo</b> <span>/ dev</span></div>
+            <nav class="links">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu</button>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="topo">
+        <div>
+            <div class="eyebrow">myportfolio</div>
+            <h1>Olá, sou o Carlos<span class="cursor"></span></h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas, construindo aplicações completas do banco de dados
+                até a interface.</p>
+            <div class="role">Desenvolvedor FullStack — Java · Python · React · PostgreSQL</div>
+            <div class="cta-row">
+                <button class="btn solid">Currículo</button>
+                <button class="btn ghost">Entrar em contato</button>
+            </div>
+        </div>
+        <div class="terminal">
+            <div class="bar"><span></span><span></span><span></span></div>
+            <div class="body">
+                <div class="line">$ whoami</div>
+                <div class="line out">carlos-eduardo</div>
+                <div class="line">$ cat stack.txt</div>
+                <div class="line out">Java · Spring · React · PostgreSQL</div>
+                <div class="line">$ ./build_portfolio.sh</div>
+                <div class="line out typed">compilando experiência...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="eyebrow">$ cat sobre.txt</div>
+        <div class="sobre-grid">
+            <div>
+                <h2><span class="prompt">&gt;</span> Sobre mim</h2>
+                <p>Sou o Carlos, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor FullStack. Gosto de
+                    entender o problema de ponta a ponta — do modelo de dados até o pixel na tela — e prefiro construir
+                    bem feito a construir rápido.</p>
+                <p>Nos meus projetos pessoais, documento decisões técnicas como quem escreve um changelog: com
+                    propósito, contexto e um motivo para cada escolha.</p>
+                <div class="stack-line">
+                    <span class="chip">Java</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">React</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">Docker</span>
+                </div>
+            </div>
+            <div class="ascii"> /\
+                / \ build --release
+                / \ test --coverage
+                /______\ deploy --prod
+
+                status: em progresso
+                uptime: sempre aprendendo</div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="eyebrow">$ git log --experiencia</div>
+        <h2 style="font-size:26px;font-weight:700;margin-bottom:10px;">Experiência</h2>
+        <div class="exp-list">
+            <div class="exp">
+                <div class="hash">commit a1f3c</div>
+                <div>
+                    <div class="role-row">
+                        <h3>Desenvolvedor Web</h3>
+                        <span class="period">ago 2025 – fev 2026 · 7 meses</span>
+                    </div>
+                    <div class="company">Canopus · Estágio · Porto Alegre, RS · Híbrido</div>
+                    <p>Foco em Frontend, construindo interfaces web integradas ao Flask: telas para sistemas internos,
+                        integração com backend, consumo de dados e validação de formulários. Também dá apoio em backend
+                        e banco de dados.</p>
+                    <div class="tags"><span>Python</span><span>Flask</span><span>Git</span></div>
+                </div>
+            </div>
+            <div class="exp">
+                <div class="hash">commit 7e0b9</div>
+                <div>
+                    <div class="role-row">
+                        <h3>Estagiário</h3>
+                        <span class="period">fev 2019 – dez 2020 · 1 ano 11 meses</span>
+                    </div>
+                    <div class="company">Tribunal de Justiça do RS · Estágio · Porto Alegre, RS · Presencial</div>
+                    <p>Juntada de petições para recursos especial e extraordinário, encaminhamento dos processos após
+                        sessões de julgamento e atendimento ao público.</p>
+                    <div class="tags"><span>Processos</span><span>Atendimento</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="habilidades">
+        <div class="eyebrow">$ ls habilidades/</div>
+        <h2 style="font-size:26px;font-weight:700;margin-bottom:34px;">Habilidades</h2>
+        <div class="skills-row">
+            <div class="skills-block">
+                <h3>Java</h3>
+                <p>backend & lógica</p>
+            </div>
+            <div class="skills-block">
+                <h3>Spring Boot</h3>
+                <p>framework web</p>
+            </div>
+            <div class="skills-block">
+                <h3>Python</h3>
+                <p>scripts & automação</p>
+            </div>
+            <div class="skills-block">
+                <h3>React</h3>
+                <p>interfaces</p>
+            </div>
+            <div class="skills-block">
+                <h3>JavaScript</h3>
+                <p>frontend</p>
+            </div>
+        </div>
+        <div class="skills-row">
+            <div class="skills-block">
+                <h3>PostgreSQL</h3>
+                <p>banco de dados</p>
+            </div>
+            <div class="skills-block">
+                <h3>Docker</h3>
+                <p>containers</p>
+            </div>
+            <div class="skills-block">
+                <h3>Git</h3>
+                <p>versionamento</p>
+            </div>
+            <div class="skills-block">
+                <h3>HTML / CSS</h3>
+                <p>estrutura & estilo</p>
+            </div>
+            <div class="skills-block">
+                <h3>REST APIs</h3>
+                <p>integração</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projetos">
+        <div class="eyebrow">$ ls projetos/ --details</div>
+        <h2 style="font-size:26px;font-weight:700;margin-bottom:10px;">Projetos</h2>
+        <div class="project-col">
+            <div class="project-item">
+                <span class="project-num">01</span>
+                <div class="project-card">
+                    <h3>Workout Tracker</h3>
+                    <p>Registro de treinos de academia inspirado no Hevy. CRUD completo de exercícios, treinos e séries,
+                        com modelagem de domínio pensada desde o catálogo de exercícios até a execução do treino.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>Spring</span><span>PostgreSQL</span><span>React</span><span>Docker</span>
+                    </div>
+                </div>
+                <button class="btn-p">ver mais</button>
+            </div>
+            <div class="project-item">
+                <span class="project-num">02</span>
+                <div class="project-card">
+                    <h3>Suite de Testes — App de Vendas</h3>
+                    <p>Suite automatizada para uma aplicação React de gestão de vendas, cobrindo produtos, clientes e
+                        registro de vendas com o padrão Page Object Model.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Pytest</span><span>Selenium</span><span>POM</span></div>
+                </div>
+                <button class="btn-p">ver mais</button>
+            </div>
+            <div class="project-item">
+                <span class="project-num">03</span>
+                <div class="project-card">
+                    <h3>Portfolio</h3>
+                    <p>Este portfolio: HTML, CSS e JavaScript puros, com animações SVG customizadas, transições em CSS e
+                        efeitos de fundo interativos — sem depender de frameworks.</p>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </div>
+                <button class="btn-p">ver mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="eyebrow">$ ./contato --send</div>
+        <h2 style="font-size:26px;font-weight:700;margin-bottom:10px;">Vamos conversar sobre a próxima oportunidade.
+        </h2>
+        <p style="color:var(--ink-soft);font-size:14px;max-width:480px;margin-bottom:36px;">Aberto a processos
+            seletivos, projetos freelance e trocas sobre desenvolvimento FullStack.</p>
+        <div class="contact-row">
+            <a class="contact-block" href="mailto:carlos@example.com">
+                <h3>Email</h3>
+                <p>carlos@example.com</p>
+            </a>
+            <a class="contact-block" href="#">
+                <h3>LinkedIn</h3>
+                <p>/in/carlos-eduardo</p>
+            </a>
+            <a class="contact-block" href="#">
+                <h3>GitHub</h3>
+                <p>/carlos-eduardo</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2026 Carlos Eduardo</span>
+        <span>myportfolio</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
