@@ -87,12 +87,11 @@ nav.links a:hover::after{width:100%;}
 .nav-toggle{
   display:none;
   background:none;
-  border:1px solid #444;
-  color:#efeeec;
-  font-family:inherit;
-  font-size:11px;
-  padding:6px 10px;
-  cursor:pointer;
+}
+
+.menuBar{
+  width: 20px;
+  height: 20px;
 }
 
 .mobile-menu{
@@ -250,13 +249,11 @@ section{
   padding:5px 10px;
   background:var(--surface);
 }
-.ascii{
-  font-size:11px;
-  color:var(--ink-faint);
-  white-space:pre;
-  line-height:1.5;
-  border-left:1px solid var(--line);
-  padding-left:24px;
+.profileImg{
+  height: 250px;
+  width: 250px;
+  border-radius:50%;
+  margin-right: 50px;
 }
 
 /* ---------- EXPERIÊNCIA ---------- */
